@@ -17,4 +17,10 @@ describe('Account', function() {
     account.deposit(10);
     expect(account.balance).toEqual(10);
   })
+
+  it('User can withdraw 5 from the account and change the balance', function() {
+    account.deposit(10);
+    account.withdraw(5);
+    expect(account.balance).toEqual(5);
+  })
 });
