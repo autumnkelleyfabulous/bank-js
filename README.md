@@ -29,31 +29,29 @@ open SpecRunner.html
 ````
 
 ## Usage
-````
+Using Chrome on a Mac, hold down Cmd + Alt + J to open the console.
 
-
-````
 Follow these instructions to run the program:
 
 1. Run the program and create a bank account:
 ````
-> account = Account.new
-=> #<Account:0x007fcde501f260 @balance=0, @transactions=[]>
+> var account = new Account();
+=>
 ````
 2. Deposit £10
 ````
 > account.deposit(10)
-=> [{:date=>"12/06/2017", :credit=>10, :debit=>nil, :balance=>10}]
+=>
 ````
 3. Withdraw £5
 ````
 > account.withdraw(5)
-=> [{:date=>"12/06/2017", :credit=>10, :debit=>nil, :balance=>10}, {:date=>"12/06/2017", :credit=>nil, :debit=>5, :balance=>5}]
+=>
 ````
 4. Display the balance
 ````
 > account.balance
-=> 5
+=>
 ````
 5. Print a statement
 ````
