@@ -36,22 +36,26 @@ Follow these instructions to run the program:
 1. Run the program and create a bank account:
 ````
 > var account = new Account();
-=>
+<= undefined
 ````
 2. Deposit £10
 ````
 > account.deposit(10)
-=>
+<= undefined
+> account.balance
+<= 10
 ````
 3. Withdraw £5
 ````
 > account.withdraw(5)
-=>
+<= undefined
+> account.balance
+<= 5
 ````
 4. Display the balance
 ````
 > account.balance
-=>
+<= 5
 ````
 5. Print a statement
 ````
@@ -59,7 +63,7 @@ Follow these instructions to run the program:
 date || credit || debit || balance
 12/06/2017 ||  || 5.00 || 5.00
 12/06/2017 || 10.00 ||  || 10.00
- => nil
+<= nil
 ````
 
 ## 👨‍👩‍👧‍👦 User stories

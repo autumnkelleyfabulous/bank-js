@@ -12,4 +12,9 @@ describe('Account', function() {
   it('Account has balance when instantiated', function() {
     expect(account.balance).toEqual(0);
   })
+
+  it('User can deposit 10 into the account and change the balance', function() {
+    account.deposit(10);
+    expect(account.balance).toEqual(10);
+  })
 });
