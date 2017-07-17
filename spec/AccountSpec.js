@@ -32,4 +32,19 @@ describe('Account', function() {
     account.deposit(10);
     expect(account.transactions.length).toEqual(1);
   })
+
+  it('Withdrawals are stored in the transaction array as objects', function() {
+    account.withdraw(10);
+    expect(account.transactions.length).toEqual(1);
+  })
+
+  it('Correct information is stored in transactions array for deposits', function(){
+    account.deposit(10);
+    expect(account.transactions[0].credit).toEqual(10);
+  })
+
+  it('Correct information is stored in transactions array for withdrawals', function(){
+    account.withdraw(10);
+    expect(account.transactions[0].debit).toEqual(10);
+  })
 });

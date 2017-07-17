@@ -10,4 +10,5 @@ Account.prototype.deposit = function(amount) {
 
 Account.prototype.withdraw = function(amount) {
   this.balance = this.balance - amount;
+  this.transactions.push({ credit: null, debit: amount, balance: this.balance })
 }
