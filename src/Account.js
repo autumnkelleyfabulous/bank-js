@@ -1,5 +1,6 @@
 function Account() {
   this.balance = 0;
+  this.transactions = [];
 }
 
 Account.prototype.deposit = function(amount) {

@@ -23,4 +23,8 @@ describe('Account', function() {
     account.withdraw(5);
     expect(account.balance).toEqual(5);
   })
+
+  it('Each account is instantiated with an empty array for transactions', function() {
+    expect(account.transactions).toEqual([]);
+  })
 });
