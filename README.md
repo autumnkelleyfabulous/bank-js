@@ -24,7 +24,9 @@ git clone git@github.com:baileytalks/bank-js.git
 ````
 ## Running tests
 
-``
+````
+open SpecRunner.html
+````
 
 ## Usage
 ````
