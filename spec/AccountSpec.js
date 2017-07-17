@@ -47,4 +47,9 @@ describe('Account', function() {
     account.withdraw(10);
     expect(account.transactions[0].debit).toEqual(10);
   })
+
+  it('Date is not null in each transaction and is 10 characters long', function() {
+    account.deposit(10);
+    expect(account.transactions[0].date.length).toEqual(10);
+  })
 });
