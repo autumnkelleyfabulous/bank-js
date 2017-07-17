@@ -5,6 +5,7 @@ function Account() {
 
 Account.prototype.deposit = function(amount) {
   this.balance = this.balance + amount;
+  this.transactions.push({ credit: amount, debit: null, balance: this.balance })
 }
 
 Account.prototype.withdraw = function(amount) {

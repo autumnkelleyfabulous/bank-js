@@ -27,4 +27,9 @@ describe('Account', function() {
   it('Each account is instantiated with an empty array for transactions', function() {
     expect(account.transactions).toEqual([]);
   })
+
+  it('Deposits are stored in the transaction array as objects', function() {
+    account.deposit(10);
+    expect(account.transactions.length).toEqual(1);
+  })
 });
